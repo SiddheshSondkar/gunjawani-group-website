@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import logo from './logo.png'; // Placeholder logo image
 import { 
   Leaf, 
   Tractor, 
@@ -37,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
             {/* Logo Image Placeholder */}
-            <img src="/icon.png" alt="Gunjawani Group Logo" className="w-12 h-12 object-contain" />
+            <img src={logo} alt="Gunjawani Group Logo" className="h-[2pc] w-[2pc] object-contain" />
             <div className="flex flex-col">
               <span className="font-heading font-bold text-xl text-brand-green leading-tight tracking-tight">Gunjawani Group</span>
               <span className="text-xs text-brand-blue font-medium">गुंजवणी समूह</span>
@@ -75,10 +76,12 @@ const Hero = () => (
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+      className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center "
     >
       {/* Logo Image Placeholder */}
-      <img src="/icon.png" alt="Gunjawani Group Logo" className="w-32 h-32 mx-auto mb-8 object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+      <div className="flex justify-center mb-8">
+        <img src={logo} alt="Gunjawani Group Logo" className="h-[10pc] w-[10pc] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+      </div>
       <h1 className="text-5xl md:text-7xl font-heading font-bold text-brand-green tracking-tight mb-4">
         Gunjawani Group
       </h1>
@@ -471,7 +474,7 @@ const Footer = () => (
         <div className="col-span-1 md:col-span-2">
           <a href="#" className="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity w-fit">
             {/* Logo Image Placeholder */}
-            <img src="/icon.png" alt="Gunjawani Group Logo" className="w-10 h-10 object-contain brightness-0 invert opacity-90" />
+            <img src={logo} alt="Gunjawani Group Logo" className="h-[2pc] w-[2pc] object-contain brightness-0 invert opacity-90" />
             <span className="font-heading font-bold text-xl text-white">Gunjawani Group</span>
           </a>
           <p className="max-w-sm text-white/80">
