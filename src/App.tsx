@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
             {/* Logo Image Placeholder */}
-            <img src="/https://github.com/SiddheshSondkar/gunjawani-group-website/blob/main/logo.png?raw=true" alt="Gunjawani Group Logo" className="w-12 h-12 object-contain" />
+            <img src="'../main/logo.png" alt="Gunjawani Group Logo" className="w-12 h-12 object-contain" />
             <div className="flex flex-col">
               <span className="font-heading font-bold text-xl text-brand-green leading-tight tracking-tight">Gunjawani Group</span>
               <span className="text-xs text-brand-blue font-medium">गुंजवणी समूह</span>
