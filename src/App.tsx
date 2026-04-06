@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import logo from './logo.png'; // Placeholder logo image
+import Lifecycle from './image1.png';
 import { 
   Leaf, 
   Tractor, 
@@ -49,7 +50,7 @@ const Navbar = () => {
             <a href="#businesses" className={`text-sm font-medium transition-colors ${scrolled ? 'text-slate-600 hover:text-brand-green-light' : 'text-slate-800 hover:text-brand-green-light'}`}>Businesses</a>
             <a href="#vision" className={`text-sm font-medium transition-colors ${scrolled ? 'text-slate-600 hover:text-brand-green-light' : 'text-slate-800 hover:text-brand-green-light'}`}>Vision</a>
             <a href="#contact" className="px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-green to-brand-blue text-white text-sm font-medium hover:opacity-90 transition-opacity shadow-md">
-              Partner with Us
+              Contact Us
             </a>
           </div>
         </div>
@@ -154,17 +155,14 @@ const About = () => (
         >
           <div className="aspect-square rounded-3xl overflow-hidden bg-brand-neutral relative">
             <img 
-              src="https://picsum.photos/seed/corporate-agri/800/800?blur=2" 
+              src={Lifecycle} 
               alt="Abstract Corporate Growth" 
               className="object-cover w-full h-full opacity-90 mix-blend-multiply"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue/20 to-brand-green/20 mix-blend-overlay"></div>
           </div>
           {/* Decorative element */}
-          <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-white rounded-full border-8 border-brand-neutral flex items-center justify-center">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-brand-green to-brand-blue opacity-10"></div>
-          </div>
+         
         </motion.div>
       </div>
     </div>
@@ -441,13 +439,13 @@ const Contact = () => (
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-brand-green-light" />
                 </div>
-                <span className="text-white/90">+91 (0) 20 1234 5678</span>
+                <span className="text-white/90">+91 99999 99999</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-brand-green-light" />
                 </div>
-                <span className="text-white/90">Pune / PCMC, Maharashtra, India</span>
+                <span className="text-white/90">Pune , Maharashtra , India</span>
               </div>
             </div>
           </div>
@@ -458,7 +456,7 @@ const Contact = () => (
               whileTap={{ scale: 0.95 }}
               className="w-full md:w-auto px-8 py-4 rounded-full bg-white text-brand-green font-bold hover:bg-brand-neutral transition-colors shadow-lg"
             >
-              Partner with Us
+              Contact Us
             </motion.button>
           </div>
         </div>
